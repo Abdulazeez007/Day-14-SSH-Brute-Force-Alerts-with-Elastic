@@ -17,6 +17,8 @@ Before creating an alert, it’s crucial to understand what constitutes a brute 
 2. Targeted user accounts
 3. Source IP addresses
 
+   ![Alt text](https://raw.githubusercontent.com/Virus192/Day-14-SSH-Brute-Force-Alerts-with-Elastic/refs/heads/main/Images/photo_5994510577315202204_w.jpg)
+
 ### Configuring the Alert
 1. Navigate to Elastic and click the hamburger icon, then select “Discover.”
 2. Identify the relevant fields in your Elastic log for failed activities, usernames, and source IPs.
@@ -25,6 +27,8 @@ Before creating an alert, it’s crucial to understand what constitutes a brute 
 5. Name your alert appropriately.
 6. Elastic will suggest a query based on your selected fields. Adjust the threshold as needed.
 7. Save the rule to activate your alert.
+
+   ![Alt text](https://raw.githubusercontent.com/Virus192/Day-14-SSH-Brute-Force-Alerts-with-Elastic/refs/heads/main/Images/photo_5994510577315202206_w.jpg)
 
 ## Creating a Visualization Dashboard
 To gain insights into the origin of these attacks, we’ll create a geographic dashboard.
@@ -46,6 +50,8 @@ system.auth.ssh.event: * and agent.name: Pheonix-Linux-Pheonixrocks and system.a
 1. Click “Add to Dashboard” and select “Create New Dashboard.”
 2. Name your dashboard (e.g., “SSH Failed Authentication”).
 3. Adjust the time range to suit your monitoring needs (e.g., last 30 days or Today).
+
+   ![Alt text](https://raw.githubusercontent.com/Virus192/Day-14-SSH-Brute-Force-Alerts-with-Elastic/refs/heads/main/Images/photo_5994510577315202212_w.jpg)
 
 ## Conclusion
 With these steps completed, you now have a robust system for detecting SSH brute force attempts. Your alert will notify you of potential attacks, while the dashboard provides a visual representation of attack origins. This setup enhances your ability to respond quickly to security threats and understand attack patterns over time.
