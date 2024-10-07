@@ -38,7 +38,7 @@ To gain insights into the origin of these attacks, we’ll create a geographic d
 2. In the KQL syntax field, enter your query:
 
 ```bash
-system.auth.ssh.event: * and agent.name: Pheonix-Linux-Pheonixrocks and system.auth.ssh.event: Failed
+system.auth.ssh.event: * and agent.name: aurora-Linux-aurora and system.auth.ssh.event: Failed
 ```
 
 3. Click “Add Layer” and select “Choropleth” to shade attack origin areas.
